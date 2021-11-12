@@ -1,8 +1,8 @@
-Module 4
+DFIR Module 4
 
-Evidence Requirements,from the cloud
+Evidence Requirement, from the cloud
 
-Access-Cloud service providers have the duty to protect their client's data
+Access-Cloud service providers must protect their client's data
 
 Usage Controls
 
@@ -11,30 +11,30 @@ Authentication
 Authentication Factors
 
 
-Documents under Seal-Should meeet the following requirements:-
+Documents under Seal-Should meet the following requirements:-
 
-The public officer placing the seal on document should be trusted
+The public officer placing the seal on the document should be trusted
 The seal is not forged
-and both the signature and seal are affixed by the same public officier
+and both the signature and seal are affixed by the same public officer
 
 Standards allowing the use of electronic seals and signatures-UETA and E-SIGN
 
-Collection of evidence,from the cloud/cloud based crime
+Collection of evidence, from the cloud/cloud-based crime
 
-A warrant should be created and kept in hand.It should cover:-
+A warrant should be created and kept in hand. It should cover:-
 VM's
 Data Logs
-Nettwork traffic from a particular IP
+Network traffic from a particular IP
 Access Logs and 
 Firewall Logs
 
 
-Validation of cloud based evidence is carried out by-cryptographic check sums
+Validation of cloud-based evidence is carried out by-cryptographic checksums
 
 Forensics Steps in CLoud based evidence
-Acquisation,Authentication and Analysis
+Acquisition, Authentication, and Analysis
 
-Challenges faced by evidence collection from cloud:-
+Challenges faced by evidence collection from the cloud:-
 
 Privacy laws affecting servers storing information in different countries
 
@@ -43,17 +43,17 @@ Cloud environment can have chance to migrate and is movable
 
 Timestamp and datestamp recorded on files will not be reflective of the actual activity performed on the file
 
-Difference in cloud plattforms.Not able to work with different plattfirns
+The difference in cloud platforms.Not able to work with different platforms
 
 Mobile Forensics
 
-1'st step-Seize the evidence in protective evidence bags and lablelled.Turned off and battery should be detatched from device
+1'st step-Seize the evidence in protective evidence bags and label it. Turned off and the battery should be detached from the device
 
 Charge the device-So as to not lose data
 Turn off the device
-Data should be extracted from the device first,if required by warrant.
+Data should be extracted from the device first if required by a warrant.
 
-The IPhone's interior:-
+The iPhone's interior:-
 Cocoa Touch
 Media Services
 Core Services
@@ -63,21 +63,23 @@ An investigator should know the limitations of a mobile evidence
 
 Game Consoles:-
 Used as illegal gambling machines
-Hackers can easily penetrate websites,without getting caught
-Vulnerable Systems-XBox 360 and PS3
+Hackers can easily penetrate websites, without getting caught
+Vulnerable Systems-Xbox 360 and PS3
 
 softmod-Install of software into the console controller
 hardmod-Applying hardware
 
-Investigators can team up on game sessions,to chat up suspects,document chats and gain digital evidence
+Investigators can team up on game sessions, to chat up suspects, document chats, and gain digital evidence
 
-A Linux distro machine can work inside an XBox
-An Xbox can be modoified for usage as a web server,personal computer
+A Linux distro machine can work inside an Xbox
+An Xbox can be modified for usage as a web server, personal computer
 
-Very less information or references on hw to extract information from an XBox
+Very little information or references on how to extract information from an Xbox
 
-In game communication is not stored anywhere.Everything from billing purchases,IP Address of box is stored by Microsoft
+In-game communication is not stored anywhere. Everything from billing purchases, IP Address of the box is stored by Microsoft
 
-Vulnerabilities in XBox-.wav and xtf files -Buffer Overflow
+Vulnerabilities in Xbox-.wav and to files -Buffer Overflow
+
+
 
 
