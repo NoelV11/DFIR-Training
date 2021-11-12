@@ -1,0 +1,114 @@
+Module 3
+
+Question Answering-Questions asked by court,to which the forensic investigator gives reasonable answers
+
+Answers provided are eith inculpatory or exculpatory
+Purpose of a Private Investigation:-
+
+a)To check if the wrong person has been held guilty
+b)Check if an employee is performing deeds in violation of company
+c)If the suspect/employee is actually causing loss of revenue to the company
+
+Digital Evidence Report Documentation Guidelines
+
+Document for prosecution purposes-Written report
+Expectations of the report or Evidenriary reporting-What,Where,W..,W.. questions should be answered with absolute proof and with conclusive evidence.
+
+What actions were taken to secure and collect the digital evidence to ensure the integrity of the evidence?
+
+A section describing the experience and qualifications of the persons conducting the digital evidence examinations, and their knowledge of and training in national standards of digital evidence recovery.
+
+Documentation will exhaustively outline and detail what steps were taken to preserve the digital evidence during the seizure, examination, storage, and transfer activities.
+
+The report will clearly present, from the point of the digital examiner, what policies and procedures were followed, who developed them, and the steps taken to follow them.
+
+Documentation will carefully outline the evidence assessment procedure and detail who examined what, how, what method or procedure, what tools were involved, and how the acquisition was accomplished.
+
+The report will outline a carefully detailed explanation of how the evidence was examined, by who, their qualifications, and their conclusions.
+
+Preparation-First topic of a report
+
+May be vulnerable,because crime scene is not documented properly
+Gives information about what happened
+Every single evidence should be marked,labelled and documented
+
+Objective Evidence-When evidence can be verified by a third party.It helps to create new theories and avenues of thought
+
+Subjective Evidence-When evidence cannot be verified by a third party.It is not important and taken in account,by the court
+
+Any omitted documentation from any step could be singled out and the report can be termed as inadequate and questionable.
+
+Digital Forensics Report for Businesses-Only require conclusions
+
+Expert Witness-Willing to testify in court
+Has good knowledge about the evidence and investigation process
+The final piece to check whether the suspect should actually be charged
+Helps the investigation team
+Armed with sufficient knowledge to help the attorney understand the case
+
+Forensic Expert Witness-The job of the forensic expert witness is to report the forensic processes used to collect evidence, the evidence collected, the events leading to the investigation, the events that occurred during the investigation, and any reasonable conclusions from the facts of the investigation.  
+
+A forensic expert witness can begin working as early as the first steps in investigating a case. This enables an expert witness to be able to testify of his or her first-hand knowledge of the processes, events, evidence, and conclusion in the case.
+
+After the written report is analyzed by the attorney,4 possible scenario can take place
+
+Ignore the report
+Agree with the facts stated and perform ruling
+Ask for a second opinion,to subject experts
+Seek an argument with the court,to reaffirm if the events ocuured or are possible
+
+Before an expert witness is selected,a through check is conducted,on the proffesional conduct of a person.These are:-
+
+On the job conduct:-
+Confidentality 
+Compliance with ethical standards
+Expertise and knwoledge
+
+Off the job conduxt:-
+Morals
+Binding with law
+Compliance with ethical principles,for an average citizen
+
+Evidence noted down in an informal report will not be the same,in a formal report
+Informal report-Made to anyone
+
+Best Evidence Rule-All evidence submitted to court should pass this rule
+Rules:-
+Hard copy of evidence (if possible)
+Bit stream copies
+Original phones,USB devices
+
+A copy of an evidence,may be treated as the best,if the original evidence is not available
+
+Expectation of Privacy-Applicable to all citizens of a country.
+That is,a evidence can only be seized,if a warrant is obtained.All citizens have right to ask information and be safe
+
+Places of evidence,where a warrant is not required:-
+
+Public places
+Government owned items-garbage cans
+Open fields
+
+Exigent Circumstances-A circumstance,where an officer believes that a evidence should be seized asap,becauseit has high chance of being destroyed.
+
+In this case,the evidence can be seized,prior to obtaining the warrant.The suspect is also arrested,before claiming the evidence
+
+Procedural Circumstances-The part of the investigation,where trained officers are:-
+Able to explain how an evidence was collected
+Ethical standard displayed by officers and while collecting evidence
+They are the resources that analyze and collect evidence
+
+Accepting evidence in court:-
+
+The report should be written in a manner,that the judge and any layman can understand it
+Judge may not be skilled in Digital Forensics
+
+
+Usage of technology,or a new way of explaining things is debated upon.
+
+There are two standards for accepting evidence in court
+
+Frye Standard-Testifies for usage of a general technique to validate evidence.Makes use of experts to validate the same
+
+Daubert Standard (since 1993)-Two principles are followed-Relevance and Reliabality of evidence.It sheds light on shoddy practices and procedures
+
