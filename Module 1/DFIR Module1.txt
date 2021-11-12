@@ -1,0 +1,81 @@
+What do I need to know?
+
+File system structure of various OS,so as to understand where the juicy information can be found
+
+Information vs Data?
+
+Information-Anything relevant to the case
+Data-Any digital evidence that is not data
+
+How to distinguish between less important data and information?
+
+Data is moved into files (logical units)
+Logical units are further divided into directories / folders
+
+Data about data-Metadata (Date range,time range,folder/file size,hidden/system files)
+
+Performance level of digital deevice-Some may retrieve data at ow/high speed-depends on partition system implemented and also based on location 
+
+Directory structure boundaries can also limit the data that is accessible.If boundaries are not set properly,then applications working within them wont work
+
+Raw Access-Making a part of the file partition unavailable.It is used by skilled attackers to hide data.The data in the space can be modified,but cannot be grouped into files/directories.
+
+These unavailable spaces may also occur as a result of automatic partitioning processes when the system is installed or re- installed. When re-installing, a portion of data from previous installations may be retrieved from these unavailable or un- allocated spaces. Retrieval is possible even if the content of each partition was removed before re-install.
+
+Storage Devices
+Large storage devices need to have some stratergy to specify a location in the media,where the data is to be stored
+
+Stream Devices-Example Tape
+Data is stored in serialized order
+You can assign the beginning and ending of file
+Disadvanttage-Fragmentation
+
+Block Devices-Example Hard Disks and Flash Drives
+Files are divided into units called blocks
+It tracks the amount of space left over
+Blocks are assigned into groups called clusters for optimization
+
+Data Transfer devices and Interfaces=SCSI Cards,Firewire(USB),ATA/IDE and SATA Hard Drive
+
+PC Cards/Express Cards-Used to extend a computer's memory.It also offers functionality to increase hard disk size
+
+Flash media is not ideal media for collecting evidence because evidence loss can occur if it is stored for several years.
+
+Gathering evidence from storage devices must be done without
+disturbing or contaminating the evidence.
+
+For instance, issuing a hard drive defragmentation can wipe out the file slack or unused data that could be valuable to the case. Simply turning on a computer can even modify system files that would be helpful to an investigation. As a result, forensics investigators should carry "write-blockers" to prevent updates to the evidence during the evidence gathering phase. A write-blocker is implemented in hardware as a special adapter that blocks electronic signals that would cause the hard disk to write.
+
+High Available Storage Options:-
+Haedware Storage Clusters
+Software
+Network
+High Availability Clusters
+
+Hibernation Mode=When prompted to hibernate,the CPU,will make a copy state of CPU,into another file,along with all eunning processes
+
+2 different paradigms in storing data and metadata
+
+I)Store data to blocks and metadata to a centralized data structure
+
+2)Distribute both metadata and data across the disk,along with maintaining a static data structure with suffcicient size
+
+File Slack-Unused data block from a block,continuing till end of cluster
+
+Can/canoot be reset back to factory settings
+
+Windows Defualt Configuration for storing files-C:
+Directories within them:-
+Documents/Settings             Windows
+Program Files                  Recycler
+
+
+Clud Storage Systems:-
+
+Web Service-The cloud storage is in your local device,but files get uploaded onto the internet,through clud provider's API
+
+Web Interface-Log in online,to upload and download files
+Gateway-
+
+What should be copied into evidence?
+Bits or blocks should be copied,that can reveal hidden or deleted files.Also it can allow investigators to view full blocks of data
