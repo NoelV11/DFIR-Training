@@ -1,0 +1,190 @@
+DFIR Module 2
+
+Seperating data from noisy ones-Searching by keyword
+
+Types of Forensic Investigations:-
+
+Public-Taxpayer's money is used to pay for court proceedings.Longer the court ruling,higher will be the cost
+
+Private (for businesses)-Deals with money extortion.laundering,fraud employess etc.
+Deals with loss of employment,money,goods etc
+
+Availablity of credible evidence helps the case to be more confident.
+
+Types of evidence in Private Investigations:-
+
+Exculpatory Evidence-Evidence that may appear to be favourable to the suspect.May be used to acquit the suspect.
+
+Inculpatory Evidence-Evidence to pin suspect to case.Suspect may have broken employee agreements,usage of company resources to perform crime etc
+
+Evidence can range from:-
+
+Physical-Storage devices
+Digital-Bits and bytes from the device
+
+For a search,warrants ARE important.
+
+Warrants are required for searching through the digital evidence.
+
+A warrant for a search on device used in narcotics dealings and storing narcotic transaction dealings cannot be extended to charge a suspect for storing child porn,if found on the computer.
+
+An additional warrant should be gained,asking for permission to search and charge suspect for storing child porn
+
+
+Building the Plan for a investigation:-
+
+Lead investigator assigns tasks to each individual(Also known as Seperation of Tasks),keeping skill sets in mind.The result is then forwarded to the investigator.
+
+The lead forensics investigator requires high level of certification,when presenting cases before the legal system.He/she only contributes to assignment of tasks(seperation of duties) to the team 
+
+Seperation of Tasks:-
+Physical Collection
+Data Collection
+Evidence Analysis
+
+
+Use of a Journal:
+
+a)For the lead investigator-Explain and go into detail about events,individuals assigned tasks,skillset of each person.He/she is the main contributor to the journal
+
+b)Forensic Investigator-The person,who analyzes the digital evidence
+
+Tools used in the investigation:-
+Hardware-Workstations,Faraday cages,Electrostatic bags
+Software-Maquisition,Winhex,Ulltimate Sluthing kit etc
+
+TIP FOR SAFETY:_
+Disconnect a computer,before extracting internal hard drives.It can give a shock.
+
+At the crime scene:-
+
+a)Survey the crime scene
+Create a sketch
+Take photographs
+Divide the scene into groups,where evidence was found
+Mark spots with 'X'
+
+b)Identify the evidence-It can be either physical classification or digital
+
+c)Ask questions about the evidence collected
+
+Transporting evidence:-
+Should be sealed
+Placed in protection bags.
+Care taken to not destroy it
+
+Chain of Custody-Things to remember
+Logs of evidence taken out and kept back in
+Evidence forms
+What was done to it?
+
+Acquiring evidence:-
+
+Scan the entire disk  or
+Scan a partition of the disk 
+
+Disk Image Acquisation:-
+
+Use writeblocker
+Disconnect the storage device from which the image is being acquired
+
+Example of Acquisation in Linux:-
+1)Run 'fdisk'-Gives information about the disk partitions
+
+Partition 1- x - x cylinders
+Partition 2- x+1 -  x-n cylinders
+
+2)Take a copy of fstab (Centos) or vsftab(Unix)-Gives more information about the partitions
+
+3)Use disk dumper (dd) to transfer content of partition,file to a destination partition or file-Image-Disk Dumper Command
+
+Validation of Evidence-Using SHA256 or MD5 Hashes
+
+Hash the original copy,verify with the copied data.
+CHECKSUM OF HASH should be calculated,should be the same and noted in the journal
+
+Sterilization of Media
+
+Whenever investigators want to store the collected data,onto some storage media,it should be sterilized
+
+The storage media can be used in cases to store data and should be sterilzied after every use
+Forensics wiping is different from disk formatting and is done using tools such as FTK,Encase etc
+
+Indexing Files to get juicy information-Faster search,less noisy data will be come across.Tools used-OSForensics and dtSearch
+
+Discriminating data-Remove noisy data from information
+
+In Windows:-
+
+Windows Registry-Database where all actions performed by a user are stored.Stores configuration settings,passwords etc.
+
+All processes and systems running on a Windows machine stores information there.
+Gain snapshots of a system,at a particular point of time
+
+Very useful to a investigator
+Skilled attacker can hide information and files in it
+
+Windows Event Logs-Stores information about failed logins,tampering with security configuration etc.
+Date Time User Event ID
+
+System Restore-Should be done before investigator investigates the system
+
+Gains snapshot of system ,in time
+
+Shortcuts/Links-Match relationships between messages sent between authors and recievers,suspects,events,time etc.This information is gained using Visualization
+
+MS Office Metadata-Data can be gained by FTK,Encase etc
+Image File metadata
+Browser Artifiacts=FTK tool is used
+Mail artifacts-Tools used-Paraben's Email Examiner or Xaminer
+Chat Artifacts-Tool Used-Paraben's Chat Examiner-
+Places to check for Chat Artifacts-RAM,Browser cache,mobile system dumps
+
+Recycle Bin
+Printer Cache-Data sent by the computer to printer is in either raw ormetafile formats.The shadow files are stored in c:\windows\system31\spool\printers
+Tools used-EMF Spoo,Encase
+
+Partition Recovery-If a suspect has deleted a partition,then it is still available to the investigator to uncover.Same is the case,if the partition is overwritten,damaged or not recognzied by the OS.
+Tools Used-Active Partition Recovery
+
+Dumping of RAM Contents or running processes-Encase or ProDiscover IR
+
+Active Network Connections from Open Sockets,in a memory dump=To view Connection history,
+
+Tool used to recover information should have-Active TCP Connections,IP Routing Table,View active UDP Connections
+
+Recover User Name and Password hashes from dump-Tools used=ElcomSoft
+
+Discrimination of Data:-
+
+a)Remove files having well known signatures-Billions of copies of the same file exist in other computers
+
+It requires steps:-
+Signatures of files from acquired image
+Signatures of files from other source
+A tool to compare both set of signatures
+
+Steps:-
+Install Media
+Clean Install
+Package Repositories
+Change Aware Systems
+
+b)Find for a specific file type
+
+Command- find /acquired image -type f -exec file{}; |grep file
+
+c)File System Structure
+
+
+Extraction of data includes:-
+Compression
+Decryption
+Carving
+
+A step to be performed while analyzing evidence:-
+Suitable lab environment with required tools
+Secure the system
+Make a copy of the data and validate it
+
+A disk image will be enough to fully reconstruct a disk
