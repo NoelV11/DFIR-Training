@@ -1,3 +1,5 @@
+Register for the "Digital Forensics Basics" course at - https://teex.org/class/awr139/
+
 DFIR Module 4
 
 Evidence Requirement, from the cloud
