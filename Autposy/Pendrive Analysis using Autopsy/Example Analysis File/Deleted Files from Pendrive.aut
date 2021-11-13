@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>5.0</SchemaVersion>
+  <CreatedDate>2019/11/26 19:42:10 (IST)</CreatedDate>
+  <ModifiedDate>2019/12/16 19:41:08 (IST)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.13.0</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.13.0</SavedByAutopsyVersion>
+  <Case>
+    <Name>deleted_files_from_pendrive_20191126_194210</Name>
+    <DisplayName>Deleted Files from Pendrive</DisplayName>
+    <Number>2001</Number>
+    <Examiner>Snake Noel</Examiner>
+    <ExaminerPhone>+917879599801</ExaminerPhone>
+    <ExaminerEmail>noelatvitb@gmail.com</ExaminerEmail>
+    <CaseNotes>The Forensics Officer wants to know the previous contents of this pendrive.It is understood that the purpose,is to know the contents of the deleted files. </CaseNotes>
+    <CaseType>Single-user case</CaseType>
+    <Database>C:\Users\titty\OneDrive\Documents\Desktop\Principles of Digital Forensics\Deleted Files from Pendrive\autopsy.db</Database>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+  <OriginalCase/>
+</AutopsyCase>
