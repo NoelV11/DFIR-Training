@@ -1,0 +1,228 @@
+Autopsy and Cyber Triage DFIR Training
+
+Instructor - Brain Carrier
+Enroll for the "Intro to DFIR: The Divide and Conquer Process (3 hours)" course - https://dfir-training.basistech.com/courses/intro-to-divide-and-conquer
+
+Role of investigator-Solve Investigative questions asked, by using data/artifacts
+Situations:-
+Check if child porn is present in the computer
+Check if the computer has been compromised
+
+Obstacles:-
+Dozens of places to look (Compromised case)
+Covering of tracks and employment of various methods by the suspect
+
+Solutions:-
+ 1) Solve IQ, by breaking down problems into smaller problems and solving them. Use data to solve these problems
+ 2)Find artifacts from the computer, categorize them. Specific questions can be solved with specific categories of artifacts
+Categorization and Prioritization of Artifacts are based on:-
+
+Accuracy of artifact      Relevance to case      Time is taken to get an answer
+
+Cyber Triage-Tool for automation of intrusion investigations, It will find the artifacts from a system, score them (bad, suspicious or normal) and rank them according to it it's the relevance
+
+
+Breaking down questions on how computers work
+
+We go over:-
+Attack techniques employed by attacker    Various OS Configurations
+
+Q)Is this system compromised?
+We check 4 fields:-
+User Activity      OS Configuration            Hardware Questions            Malicious Process
+
+Malicious Process-  Suspicious User Logins (stored in logs)-Account Takeover
+Malicious Software causing hardware changes in system-Firmware, BIOS
+                           OS Changes-Disabling of services
+Malicious Software-Backdoors, Keystroke loggers (Installed unknowingly as packages into the system)   
+
+Tools used to analyze artifacts. They help in:-
+Collection-Some tools allow you to get snapshots of before the activity and after the activity
+Some tools give you a full snapshot
+
+Analysis-Tools tell you which artifacts are accurate.
+Which are relevant to the case
+
+Challenges of using a tool:-
+Ease of finding diverse artifacts in system-How many command lines to execute? Use of API to trick system
+Ease of remote collection of system-Can you remotely log in using API?
+Identifying of relevant data-Allows you to observe and recognize, if files or configurations are normal on a system
+Pivoting-Does it allow to see what happened to the data before hacking activity was done
+Scaling of hosts-Does the system accommodates multiple hosts and do we need to check them off one by one?
+
+Fill Image example-We need to use tools, that can parse the disk image and get the relevant artifacts
+
+Important to get automated tools for performing work faster and efficiently
+
+Cyber Triage Workflow
+2)Scan for IOC-Indicators of Compromise
+3)Review-Some suspicious flags or activities that may not reflect the full story. For example, a user may be flagged as suspicious, as there are many remote desktops associated with the user account. Maybe it could be an IT person, who requires RemoteDesktop as a core part of their job, or else it could be an attacker
+Items that are scored as suspicious should be reviewed first, before examining those which have not been reviewed yet.
+
+Q)Is the system compromised? 
+Suspicious User Activity-Could cover the following:-
+Suspicious Accounts-Single Artifact Category
+Suspicious logins-Single Artifact Category
+Suspicious Account Activities-Can not be placed under Single Artifact Category
+
+Why do we enumerate users? - We want to see who used the computer and if they have admin privileges or not
+Eg-Attacker creating a new account-Very noisy.Easily detectable in the login screen
+Attacker creating an account and granting admin privileges to another user
+Why do attackers create accounts-To to preserve their work and not for repeated backdoor entry.
+
+Suspicious Accounts get booked under the Single Artifact category.Processes/Files produced:-
+Metadata about these accounts (includes domain and local data)
+All logs for these accounts
+
+In Windows OS, we have the SAM registry file
+SAM File stores a list of all active accounts 
+Deleted accounts won't be present, but
+Event log present in SAM registry contains all login activity(failed and successful)-locations and timestamps (RemoteDesktop could also be used)
+Home directories for deleted accounts still exist
+
+THE AMOUNT OF DATA THAT YOU GET MAY DEPEND ON THE SYSTEM'S AUDIT SETTINGS. SOME KEEP RECORDS FROM INITIAL LOGIN ATTEMPT AND SOME KAAP VERY FEW LOGS OR RECORDINGS
+
+LOGIN METADATA ALLOWS US TO PERFORM ANALYSIS.
+
+Suspicious User Activities can be divided into:-
+
+a)Execution of Suspicious Programs-Termed under single artifact category
+b)Has suspicious data been accessed?-Termed under single artifact category
+c)Has the user searched for suspicious websites?-Single Artifact category
+d)Execution of Suspicious Programs, by the user,remotely-Single Artifact Category
+
+a)Execution of Suspicious Programs
+We can fetch this data using the Prefetch-A tool created by Windows, to record programs that have been run on the computer, so that OS can load them faster, making the system more efficient. This tool can be leveraged to find old traces of programs being run
+
+References for Program Run (previously run) Artifact Sources:-
+RecentApps       RunMRU         Event Log - Name of files 
+
+Analyzing Programs Run:- Key Questions
+Is a suspicious program stored in atypical location
+Is it created between a suspicious timeframe
+Does it have a legitimate certificate?
+Is the program flagged as malware?
+ 
+b)Access of Suspicious Data on system
+Stores data about host and directory from which the data was accessed from
+
+References for Accessed Data Artifact Sources:-
+
+Shellbags - In File Explorer-shows which folder was opened
+RunMRU-Shows folders and files, searched by users (different)
+
+Application-MRU -Show most recently used and opened files and folders by users
+
+Web Artifacts-Stores history of websites and cookies, for each user
+
+Memory-Will store history of command-line commands executed by users, file paths, etc
+
+Continuous Monitoring-Monitors and records everything
+
+Questions-Did the user perform mass copies of files?
+
+c)Suspicious Websites visited by the user
+
+Based on the timestamps of when the search was made.
+Search Artifact Sources:-
+URL-Web History of the user in question
+OS also saves some searches
+Questions-Did user search for websites relating to their job
+
+d)Remote execution of suspicious software
+Determines the remote host and username
+            if some script or command was run
+Search Artifacts:-
+The event log contains login records, based on the authentication type
+Registry also stores remote login details (accounts and hosts details)
+Question-Is the remote user the same as the local user?
+
+2)Malware
+
+a)Malware Persistence Problems
+Malware hiding:-
+Modify OS data Structures
+Parasite-Use a process, insert malicious threads, and start the process over again
+Malware is not a single artifact 
+
+Malware life cycles:-
+Startup-Does it loads on bootup?
+Running-Are there malicious processes running?
+Remnants-Was there some remnants of malware
+
+Malware detection:-
+Hashing-Compare hash of malware, with the directory in possession of anti-virus?
+Static Analysis-Does the malware has a high-level byte signature, from previous software
+Dynamic Analysis-Check for malicious behavior
+Reverse Engineering-Carry out some instructions to exploit
+
+Malicious Software Triggered-It is a single artifact source
+Sources of information:-
+Date of creation
+Directory path of malicious software to be executed
+
+Where to look for malicious triggered programs:-
+Registry
+Task Files-Tasks that is scheduled to run
+Startup Files
+
+Indicators of a malicious file:-
+Program .exe is located at an unusual location
+Is it signed with an untrusted authority
+Is that program normally there?
+
+Trick Malicious Software Launch-Is not  a single artifact source
+Methods of tricking:-
+Shortcuts
+Emails relevant to user-Has an attachment which is something else, from what is intended
+Suspicious software may be placed in suspicious locations
+ 
+Malicious libraries that accidentally get loaded
+
+Analyze libraries of OS-Using dynamic and static analysis
+
+2)Malicious Processes running-May have suspicious names, unusual high use of resources, similar name to other files
+
+3)Any signs that malware was run?
+
+Malware may have been removed.No remnants of it in the system
+Stealthy-It must have changed locations in the system. New persistence techniques are employed
+This is not a single artifact category
+
+Remnants that a malware started-It is a single artifact category
+Remnants that malware created during running-Not a single artifact category
+Eg)Any files left behind after IOC's (past incidents)?
+
+Remnants that a malware program shutdown-It consists of a process name and serial number
+Present in event logs and stores reasons(if a process crashes).Interval of process execution
+
+OS Configuration Changes-We do not use single artifact categories, since the settings for OS Configuration are unique
+Why configuring is done by attackers?
+Enable their malware
+Easier access
+
+Attacker Motivations -  Attack, Detection-No, very careful, Response-Less chance to track down and Malware
+
+OS Configuration-Possible to do, using remote computing. Maintaining access is key
+Using Remote Desktop app
+Using backdoors
+Using Powershell remote execution
+
+Detection Configuration
+
+How to prevent detection-Disabling firewalls and automatic updates
+Disabling Incident Response Software-Such as antivirus
+
+Response Configuration
+Done by disabling logs, accounts, and endpoints
+
+Changes needed by malware
+-Change in the execution path of the malware
+-Change hosts file
+
+Analyzing configuration data-Found in registry and configuration files
+
+Ways of carrying out investigation
+
+Pulling on threads-Finding a clue, following up on it, finding every possible stuff related to it. See where it leads you
+ 
