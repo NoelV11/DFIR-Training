@@ -1,3 +1,5 @@
+Download the tool from here - https://www.autopsy.com/download/
+
 Step 1- Open Autopsy
 Step 2 - Insert Pendrive
 Step 3 -Open New Case
