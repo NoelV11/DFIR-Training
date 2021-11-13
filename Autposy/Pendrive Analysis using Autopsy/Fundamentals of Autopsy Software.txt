@@ -1,0 +1,15 @@
+Step 1- Open Autopsy
+Step 2 - Insert Pendrive
+Step 3 -Open New Case
+Step -4 Window 1-Fill in details.
+Step 5- Window 2-Here the details to be filled is optional,but it will be wise to fill them up
+
+Details should be properly specified and mentioned.A slight mistake can cause serious consequences
+
+Step 6- Window 3-If the inserted media is a pendrive,Click on local disk.If the file to be exxamined is a jpeg file,browse in the laptop and select on Disc 
+Step 7-Window 5-Select on the Local disk button as seen in the window 4,if it is a pendrive.
+Select the time zone in which you are working in.
+Step 8-Window 6-This shows the complete options,that you require.Select as required.
+After addition of orphan files,as seen in Window 7
+Step 9-Window 8-It shows the whole list of deleted files from the pendrive
+The analyst can generate a report and close the case.The generation of report can be done in HTML Format or Excel format,it is displayed on the side taskbar
