@@ -1,0 +1,89 @@
+2019-11-26 19:42:42.708 org.sleuthkit.autopsy.keywordsearch.Server isRunning
+INFO: Solr server is running
+2019-11-26 19:42:52.063 org.sleuthkit.autopsy.imagegallery.PerCaseProperties getConfigSetting
+INFO: File did not exist. Created file [Image Gallery.properties]
+2019-11-26 19:42:54.828 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.25.2 loaded in native mode
+2019-11-26 19:42:55.735 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened Deleted Files from Pendrive (deleted_files_from_pendrive_20191126_194210) in C:\Users\titty\OneDrive\Documents\Desktop\Deleted Files from Pendrive as the current case
+2019-11-26 19:42:57.48 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.13.0
+2019-11-26 19:42:57.559 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.13.0
+2019-11-26 19:42:57.567 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.13.0
+2019-11-26 19:42:57.576 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.13.0
+2019-11-26 19:42:57.581 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.13.0
+2019-11-26 19:42:57.691 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.13.0
+2019-11-26 19:42:57.777 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.13.0
+2019-11-26 19:42:57.784 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.13.0
+2019-11-26 19:42:57.864 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.13.0
+2019-11-26 19:42:57.918 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2019-11-26 19:42:57.954 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.13.0
+2019-11-26 19:42:57.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.13.0
+2019-11-26 19:42:57.989 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.13.0
+2019-11-26 19:42:57.991 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.13.0
+2019-11-26 19:42:58.081 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.13.0
+2019-11-26 19:43:21.365 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.13.0
+2019-11-26 20:01:46.31 org.sleuthkit.autopsy.ingest.IngestPipelinesConfiguration getInstance
+INFO: Creating ingest module loader instance
+2019-11-26 20:01:46.869 org.sleuthkit.autopsy.ingest.IngestMonitor$MonitorTimerAction logMonitoredRootDirectory
+INFO: Monitoring disk space of C:\
+2019-11-26 20:01:46.87 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 0
+2019-11-26 20:01:47.705 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer loadConfigFile
+INFO: Load successful
+2019-11-26 20:01:54.353 org.sleuthkit.autopsy.keywordsearch.Server isRunning
+INFO: Solr server is running
+2019-11-26 20:01:54.384 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Keyword search ingest module instance 0 shutting down
+2019-11-26 20:01:54.394 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Indexed files count: 0
+2019-11-26 20:01:54.399 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Indexed file chunks count: 0
+2019-11-26 20:01:54.83 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting PhotoRec Carver ingest module for job 0
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: The selected file ingest filter ignores unallocated space. This module carves unallocated space. Please choose a filter which does not ignore unallocated space or disable this module.
+	org.sleuthkit.autopsy.modules.photoreccarver.PhotoRecCarverFileIngestModule.startUp(PhotoRecCarverFileIngestModule.java:148)
+	org.sleuthkit.autopsy.ingest.FileIngestPipeline$PipelineModule.startUp(FileIngestPipeline.java:225)
+	org.sleuthkit.autopsy.ingest.FileIngestPipeline.startUp(FileIngestPipeline.java:106)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:459)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:419)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2019-11-26 20:01:54.83 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 0 could not be started
+2019-11-26 20:12:25.315 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Tagged Files
+2019-11-26 20:12:25.318 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Tagged Images
+2019-11-26 20:12:25.319 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Tagged Results
+2019-11-26 20:18:11.625 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case Deleted Files from Pendrive (deleted_files_from_pendrive_20191126_194210) in C:\Users\titty\OneDrive\Documents\Desktop\Deleted Files from Pendrive
+2019-11-26 20:18:13.691 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Shutting down image gallery controller for case Deleted Files from Pendrive (deleted_files_from_pendrive_20191126_194210)
+2019-11-26 20:18:13.693 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB close
+INFO: Closing the drawable.db
+2019-11-26 20:18:13.739 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Completed shut down of image gallery controller for case Deleted Files from Pendrive (deleted_files_from_pendrive_20191126_194210)
