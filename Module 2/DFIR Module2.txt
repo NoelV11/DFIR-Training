@@ -1,3 +1,5 @@
+Register for the "Digital Forensics Basics" course at - https://teex.org/class/awr139/
+
 DFIR Module 2 
 	 
 	Separating data from noisy ones-Searching by keyword 
