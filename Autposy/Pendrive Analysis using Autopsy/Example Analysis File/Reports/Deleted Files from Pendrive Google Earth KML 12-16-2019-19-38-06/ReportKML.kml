@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Autopsy Forensic Report KML</name>
+    <Folder>
+      <Icon>
+        <href><![CDATA[https://raw.githubusercontent.com/sleuthkit/autopsy/develop/Core/src/org/sleuthkit/autopsy/images/camera-icon-16.png]]></href>
+      </Icon>
+      <name>EXIF Metadata</name>
+    </Folder>
+    <Folder>
+      <Icon>
+        <href><![CDATA[https://raw.githubusercontent.com/sleuthkit/autopsy/develop/Core/src/org/sleuthkit/autopsy/images/gpsfav.png]]></href>
+      </Icon>
+      <name>GPS Bookmarks</name>
+    </Folder>
+    <Folder>
+      <Icon>
+        <href><![CDATA[https://raw.githubusercontent.com/sleuthkit/autopsy/develop/Core/src/org/sleuthkit/autopsy/images/gps-lastlocation.png]]></href>
+      </Icon>
+      <name>GPS Last Known Location</name>
+    </Folder>
+    <Folder>
+      <Icon>
+        <href><![CDATA[https://raw.githubusercontent.com/sleuthkit/autopsy/develop/Core/src/org/sleuthkit/autopsy/images/gps-trackpoint.png]]></href>
+      </Icon>
+      <name>GPS Routes</name>
+    </Folder>
+    <Folder>
+      <Icon>
+        <href><![CDATA[https://raw.githubusercontent.com/sleuthkit/autopsy/develop/Core/src/org/sleuthkit/autopsy/images/gps-search.png]]></href>
+      </Icon>
+      <name>GPS Searches</name>
+    </Folder>
+    <Folder>
+      <Icon>
+        <href><![CDATA[https://raw.githubusercontent.com/sleuthkit/autopsy/develop/Core/src/org/sleuthkit/autopsy/images/gps-trackpoint.png]]></href>
+      </Icon>
+      <name>GPS Trackpoints</name>
+    </Folder>
+  </Document>
+</kml>
