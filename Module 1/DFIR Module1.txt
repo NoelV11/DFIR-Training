@@ -1,3 +1,5 @@
+Register for the "Digital Forensics Basics" course at - https://teex.org/class/awr139/
+
 What do I need to know?
 
 File system structure of various OS, to understand where the juicy information can be found
