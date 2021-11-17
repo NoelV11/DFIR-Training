@@ -3,4 +3,4 @@ This repository provides the learner,the basics of Digital Forensics and Inciden
 
 NOTE:The materials provided in this repository are for educational purposes only and should not be used for any unlawful activity,for which the repository's author won't be held responsible 
 
-This repoistory will be maintained regularly,as I catch hold of more free reesources!
+This repoistory will be maintained regularly,as I catch hold of more free resources!
