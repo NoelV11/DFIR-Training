@@ -1,1 +1,44 @@
-Volatility
+Memory Forensics, using Volatality
+
+My recommendation - Do the Volatality room on TryHackMe to supplement your learning
+
+Volatility is a tool to help analyze memory images,during incident response.
+
+Memory is catured, using images.Images have .raw extension
+Images are captured using tools,such as Redline and FTK Imager
+
+Offline machine (Linux or Windows) memory image files can be obtained easily, since they are not encrypted.
+For Windows- %SystemDrive%/hiberfil.sys  
+This is the hibernation file, which takes the memory image and is then used at the next boot up, for faster booting
+
+Virtual Machines also have image files
+
+VMWARE- .vmem -These image files can be uses, when the machine is on, hence preserving the machone's frensic integrity
+
+Each Windows OS has a different memory image and we have PROFILES in Volatality, to analyze memory images
+
+Our first command-volatility -f <memoryimage.extension> imageinfo -To check which volatility profile is suitable
+
+To view acive processess  
+Command  - volatility -f <memeoryfile.extension> imageinfo--profile=PROFILE pslist
+
+To view active connections 
+Command - volatility -f cridex.exe --profile=PROFILE netscan
+
+To view active processes(possibly malware) that is hidden
+
+Command - volatility -f cridex.vmem psxview (If false, it is a malware)
+ 
+To view if a file has been affected in a greater detail 
+
+Command- volatiility -f <memoryfile.extension> ldrmodules (If false,file has been laced by SQL Injection)
+
+This command provides 3 columns INInit,InLoad,InMem - If all 3 columns return false, it is a sign of possible injection
+
+Malfind command-To find if file has been infected with malware.Also we will dump the malware laced files to a directory
+
+Command-volatility -f cridex.vmem--profile=PROFILE malfind -D <directory path> recommended to use /tmp
+
+Pulling out the infected files, using the pid of the process 
+
+Command- volatility -f cridex.vmem--profile=PROFILE --pid <PID> dildump -D <directory path> recommended to use /tmp
